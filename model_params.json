@@ -1,0 +1,462 @@
+{
+ "name": "TALLRiskPanel",
+ "disease": "T-cell acute lymphoblastic leukemia (T-ALL)",
+ "genes": [
+  "CD34",
+  "LAT2",
+  "HSH2D",
+  "TPM4",
+  "ERG",
+  "CDK6",
+  "P2RX1",
+  "SSBP2",
+  "DAPK1",
+  "SYNE2",
+  "FYB1",
+  "SAMHD1",
+  "SLFN5",
+  "IL10RA",
+  "ETS1",
+  "THEMIS"
+ ],
+ "gene_direction": {
+  "up_in_stem_like_high_risk": [
+   "CD34",
+   "LAT2",
+   "HSH2D",
+   "TPM4",
+   "ERG",
+   "CDK6",
+   "P2RX1",
+   "SSBP2",
+   "DAPK1"
+  ],
+  "up_in_mature_low_risk": [
+   "SYNE2",
+   "FYB1",
+   "SAMHD1",
+   "SLFN5",
+   "IL10RA",
+   "ETS1",
+   "THEMIS"
+  ]
+ },
+ "weights": {
+  "CD34": 0.39526,
+  "LAT2": 0.91331,
+  "HSH2D": 1.02787,
+  "TPM4": 0.46807,
+  "ERG": 0.14763,
+  "CDK6": 0.15729,
+  "P2RX1": 0.36328,
+  "SSBP2": 0.21892,
+  "DAPK1": 0.30494,
+  "SYNE2": -0.66401,
+  "FYB1": -0.80902,
+  "SAMHD1": -0.11894,
+  "SLFN5": -0.70931,
+  "IL10RA": -0.1905,
+  "ETS1": -0.18906,
+  "THEMIS": -0.76985
+ },
+ "intercept_b": -0.01239,
+ "linear_threshold": 0.59425,
+ "hgb_prob_threshold": 0.44174,
+ "hgb_params": {
+  "max_iter": 200,
+  "max_leaf_nodes": 8,
+  "learning_rate": 0.08
+ },
+ "ref_cohorts": {
+  "TARGET": {
+   "CD34": {
+    "mean": 1.387066,
+    "sd": 1.548434
+   },
+   "LAT2": {
+    "mean": 3.418883,
+    "sd": 1.484512
+   },
+   "HSH2D": {
+    "mean": 3.402208,
+    "sd": 1.648498
+   },
+   "TPM4": {
+    "mean": 4.822278,
+    "sd": 0.855948
+   },
+   "ERG": {
+    "mean": 3.793975,
+    "sd": 1.038361
+   },
+   "CDK6": {
+    "mean": 7.289626,
+    "sd": 0.727866
+   },
+   "P2RX1": {
+    "mean": 3.905723,
+    "sd": 0.889992
+   },
+   "SSBP2": {
+    "mean": 4.426428,
+    "sd": 0.612802
+   },
+   "DAPK1": {
+    "mean": 3.797275,
+    "sd": 1.196688
+   },
+   "SYNE2": {
+    "mean": 3.971983,
+    "sd": 1.064539
+   },
+   "FYB1": {
+    "mean": 4.680007,
+    "sd": 1.186448
+   },
+   "SAMHD1": {
+    "mean": 1.36046,
+    "sd": 0.900353
+   },
+   "SLFN5": {
+    "mean": 2.737693,
+    "sd": 1.507657
+   },
+   "IL10RA": {
+    "mean": 2.116901,
+    "sd": 1.035634
+   },
+   "ETS1": {
+    "mean": 5.982291,
+    "sd": 0.899611
+   },
+   "THEMIS": {
+    "mean": 2.629679,
+    "sd": 1.956331
+   }
+  },
+  "Combined": {
+   "CD34": {
+    "mean": 2.80016,
+    "sd": 2.544754
+   },
+   "LAT2": {
+    "mean": 3.878741,
+    "sd": 1.683659
+   },
+   "HSH2D": {
+    "mean": 4.085878,
+    "sd": 1.806265
+   },
+   "TPM4": {
+    "mean": 6.020888,
+    "sd": 0.909668
+   },
+   "ERG": {
+    "mean": 4.035796,
+    "sd": 1.448071
+   },
+   "CDK6": {
+    "mean": 6.765661,
+    "sd": 1.224073
+   },
+   "P2RX1": {
+    "mean": 3.827771,
+    "sd": 0.957774
+   },
+   "SSBP2": {
+    "mean": 4.418993,
+    "sd": 0.91284
+   },
+   "DAPK1": {
+    "mean": 3.809743,
+    "sd": 1.175801
+   },
+   "SYNE2": {
+    "mean": 3.773659,
+    "sd": 1.223266
+   },
+   "FYB1": {
+    "mean": 4.680007,
+    "sd": 1.186448
+   },
+   "SAMHD1": {
+    "mean": 2.724797,
+    "sd": 1.154099
+   },
+   "SLFN5": {
+    "mean": 3.197829,
+    "sd": 1.870171
+   },
+   "IL10RA": {
+    "mean": 2.775224,
+    "sd": 1.21891
+   },
+   "ETS1": {
+    "mean": 5.658667,
+    "sd": 1.52685
+   },
+   "THEMIS": {
+    "mean": 2.545499,
+    "sd": 1.907525
+   }
+  },
+  "Cohort1": {
+   "CD34": {
+    "mean": 2.29901,
+    "sd": 2.244871
+   },
+   "LAT2": {
+    "mean": 3.514542,
+    "sd": 1.741704
+   },
+   "HSH2D": {
+    "mean": 4.265477,
+    "sd": 1.822375
+   },
+   "TPM4": {
+    "mean": 6.057983,
+    "sd": 0.489778
+   },
+   "ERG": {
+    "mean": 4.322669,
+    "sd": 1.142016
+   },
+   "CDK6": {
+    "mean": 7.658803,
+    "sd": 0.644042
+   },
+   "P2RX1": {
+    "mean": 3.403508,
+    "sd": 0.730841
+   },
+   "SSBP2": {
+    "mean": 5.197416,
+    "sd": 0.410711
+   },
+   "DAPK1": {
+    "mean": 4.016139,
+    "sd": 1.491238
+   },
+   "SYNE2": {
+    "mean": 3.954133,
+    "sd": 0.995942
+   },
+   "FYB1": {
+    "mean": 4.680007,
+    "sd": 1.186448
+   },
+   "SAMHD1": {
+    "mean": 3.343992,
+    "sd": 1.028771
+   },
+   "SLFN5": {
+    "mean": 5.022658,
+    "sd": 1.383038
+   },
+   "IL10RA": {
+    "mean": 2.661945,
+    "sd": 0.984504
+   },
+   "ETS1": {
+    "mean": 6.581154,
+    "sd": 1.163195
+   },
+   "THEMIS": {
+    "mean": 4.150865,
+    "sd": 1.643121
+   }
+  },
+  "Cohort2": {
+   "CD34": {
+    "mean": 2.991776,
+    "sd": 2.625303
+   },
+   "LAT2": {
+    "mean": 4.017993,
+    "sd": 1.639688
+   },
+   "HSH2D": {
+    "mean": 4.017208,
+    "sd": 1.795325
+   },
+   "TPM4": {
+    "mean": 6.006705,
+    "sd": 1.025399
+   },
+   "ERG": {
+    "mean": 3.92611,
+    "sd": 1.535092
+   },
+   "CDK6": {
+    "mean": 6.424165,
+    "sd": 1.221079
+   },
+   "P2RX1": {
+    "mean": 3.98999,
+    "sd": 0.984232
+   },
+   "SSBP2": {
+    "mean": 4.121361,
+    "sd": 0.875852
+   },
+   "DAPK1": {
+    "mean": 3.730827,
+    "sd": 1.018982
+   },
+   "SYNE2": {
+    "mean": 3.704654,
+    "sd": 1.293079
+   },
+   "FYB1": {
+    "mean": 4.680007,
+    "sd": 1.186448
+   },
+   "SAMHD1": {
+    "mean": 2.488045,
+    "sd": 1.110811
+   },
+   "SLFN5": {
+    "mean": 2.500101,
+    "sd": 1.530821
+   },
+   "IL10RA": {
+    "mean": 2.818536,
+    "sd": 1.294775
+   },
+   "ETS1": {
+    "mean": 5.305951,
+    "sd": 1.50184
+   },
+   "THEMIS": {
+    "mean": 1.931682,
+    "sd": 1.623403
+   }
+  }
+ },
+ "_n": {
+  "TARGET": 265,
+  "Combined": 47,
+  "Cohort1": 13,
+  "Cohort2": 34
+ },
+ "training": {
+  "n": 265,
+  "label": "MRD_D29>=0.01%",
+  "cv_auc_hgb": 0.7508,
+  "cv_auc_linear": 0.7722,
+  "dual_engine_agreement": 0.8113,
+  "validation_guangzhou_spearman_D19": 0.681,
+  "note": "multi-reference-space augmented training; thresholds from 5-fold CV Youden (TARGET)"
+ },
+ "note": "z=(log2(FPKM+1)-mean)/sd per reference cohort; linear S=sum(w*z)+b; dual engine boundary flag on disagreement",
+ "gene_direction_label": {
+  "up": "\u5e72\u6837\u65b9\u5411\uff08\u9ad8\u5371\uff09",
+  "down": "\u6210\u719f\u65b9\u5411\uff08\u4f4e\u5371\uff09"
+ },
+ "validation": {
+  "training_TARGET_n265": {
+   "cv_auc_hgb": 0.751,
+   "cv_auc_linear": 0.7722,
+   "dual_engine_agreement": 0.8113,
+   "spearman_D29_MRD": 0.479
+  },
+  "cross_platform_GSE26713_n117": {
+   "immature_vs_mature_median": [
+    0.544,
+    -3.293
+   ],
+   "mw_p": 0.0001,
+   "per_gene_direction_significant": "7/16"
+  },
+  "single_cell_GSE227122": {
+   "dx_to_eoi_pairs_drop": "5/5",
+   "wilcoxon_p": 0.0625
+  },
+  "single_cell_GSE161896": {
+   "etp_pdx_vs_tall_pdx_median": [
+    "0.492",
+    "-0.480"
+   ],
+   "mw_p": 1.3e-51
+  },
+  "specificity_GSE154109_GSE132509_GSE248287": {
+   "healthy_tnk_median": [
+    -0.69,
+    -0.93,
+    -0.45
+   ],
+   "malignant_dx_median": 0.44
+  },
+  "note": "2026-11-08 multi-cohort validation update; model parameters unchanged",
+  "external_three_cohorts": {
+   "merged_47": {
+    "spearman_D19": 0.502,
+    "p": 0.00032,
+    "auc_D19geq10": 0.841,
+    "median_split_p": 0.004,
+    "note": "Cohort1 n=13 + Cohort2 n=34, per-cohort standardized"
+   },
+   "Shenzhen": {
+    "t_all_n": 0
+   },
+   "Cohort1_n13": {
+    "spearman_D19": 0.681,
+    "p": 0.01
+   },
+   "Cohort2_ID_verified_n34": {
+    "spearman_D19": 0.382,
+    "p": 0.026,
+    "auc_D19geq10": 0.755,
+    "note": "card-bridge-matched samples excluded (direction-reversed, mis-mapped)"
+   }
+  },
+  "single_cell_SCPCP000003": {
+   "sample_level": {
+    "ETP_n30_median": "0.278",
+    "nonETP_n11_median": "-0.340",
+    "mw_p": 0.0039
+   },
+   "cell_level": {
+    "TALL_vs_AML_median": [
+     0.099,
+     -1.632
+    ],
+    "p": "<0.0001"
+   },
+   "boundary_note": "T-myeloid MPAL scores comparable to T-ALL (panel measures malignant immaturity, not lineage)"
+  },
+  "single_cell_GSE168594": {
+   "post_venetoclax_residual": {
+    "n_samples": 4,
+    "t_cell_score_median": 0.02,
+    "note": "no stem enrichment in post-treatment residual; consistent with treatment clearing high-score cells"
+   }
+  },
+  "single_cell_GSE248287": {
+   "dx_to_remission": "6/7 pairs drop (delta +0.75, wilcoxon p=0.109)",
+   "specificity_vs_normal_T": {
+    "malignant_median": 0.44,
+    "normal_T_median": -0.45,
+    "p": "<1e-10"
+   },
+   "site_effect": {
+    "BM_median": 1.1,
+    "PB_median": 0.2,
+    "p": 0.04
+   }
+  },
+  "batch_shift_simulation": {
+   "shift2.0": {
+    "adaptive_auc": "0.731\u00b10.051",
+    "global_z_auc": "0.655\u00b10.081",
+    "repeats": 10
+   },
+   "note": "adaptive per-cohort standardization stays stable under simulated cohort drift"
+  },
+  "external_Cohort1_n13": {
+   "spearman_D19_MRD": 0.681,
+   "p": 0.01,
+   "auc_D19geq10": 0.975
+  }
+ }
+}
